@@ -6,7 +6,7 @@ class MegaverseAPI {
         this.baseURL = 'https://challenge.crossmint.io/api';
     }
 
-    // I continuing encounter 429 too many request error, so I add the delay
+    // I continuing encounter 429 too many requests error, so I add the delay
     async createPolyanet(row, column, delay = 10000) {
         await this.delay(delay);
         const url = `${this.baseURL}/polyanets`;
